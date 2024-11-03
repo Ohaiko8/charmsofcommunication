@@ -173,7 +173,11 @@ h1 {
 
 #end-screen p {
     font-size: 20px;
-    margin-bottom: 30px;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 100px;
+    margin-top: 5%;
+    
 }
 
 #end-screen button {
