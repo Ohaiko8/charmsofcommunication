@@ -11,9 +11,9 @@ body {
 
 /* Стили контейнера */
 #game-container {
-    width: 90%;
+    width: 80%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 10% auto;
     margin-bottom: 100px;
     background-color: #2C2C54; /* Тёмно-фиолетовый фон для контейнера */
     padding: 20px 20px 20px 20px;
