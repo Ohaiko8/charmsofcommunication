@@ -200,3 +200,59 @@ h1 {
 #game-container, #end-screen {
     animation: fadeIn 1s ease-in;
 }
+
+/* Адаптивные стили для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    #game-container, #end-screen {
+        width: 100wv;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #dialogue h2 {
+        font-size: 20px;
+    }
+
+    #dialogue p {
+        font-size: 16px;
+    }
+
+    #options button {
+        font-size: 16px;
+        padding: 12px;
+        min-height: 45px;
+    }
+
+    #next-button {
+        font-size: 18px;
+        padding: 12px 20px;
+        min-height: 45px;
+    }
+
+    #score-lives-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #score, #lives {
+        margin-bottom: 10px;
+    }
+
+    #score img, #lives img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon, .heart-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
