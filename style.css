@@ -214,19 +214,19 @@ h1 {
     }
 
     h1 {
-        font-size: 28px;
-    }
-
-    #dialogue h2 {
         font-size: 24px;
     }
 
-    #dialogue p {
+    #dialogue h2 {
         font-size: 20px;
     }
 
+    #dialogue p {
+        font-size: 18px;
+    }
+
     #options button {
-        font-size: 20px;
+        font-size: 16px;
         padding: 12px;
         min-height: 45px;
     }
@@ -257,10 +257,6 @@ h1 {
     }
     
     #explanation p{
-        font-size: 20px;
-    }
-    
-    #next-button {
         font-size: 20px;
     }
 }
