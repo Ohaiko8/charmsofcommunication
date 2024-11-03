@@ -13,9 +13,10 @@ body {
 #game-container {
     width: 90%;
     max-width: 800px;
-    margin: 30px auto;
+    margin: 20px auto;
+    margin-bottom: 100px;
     background-color: #2C2C54; /* Тёмно-фиолетовый фон для контейнера */
-    padding: 20px 20px 100px 20px;
+    padding: 20px 20px 20px 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     border: 2px solid #6A0DAD; /* Граница основного фиолетового цвета */
@@ -235,8 +236,8 @@ h1 {
         min-height: 45px;
         position: fixed;
         bottom: 0;
-        left: 0;
-        width: 100%; /* Make button span full width */
+        left: 10%;
+        width: 80%; /* Make button span full width */
         text-align: center;
         border-radius: 0; /* Remove border radius to fit bottom edge */
     }
@@ -261,6 +262,6 @@ h1 {
     }
     
     #explanation p{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
