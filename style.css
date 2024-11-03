@@ -15,7 +15,7 @@ body {
     max-width: 800px;
     margin: 30px auto;
     background-color: #2C2C54; /* Тёмно-фиолетовый фон для контейнера */
-    padding: 20px;
+    padding: 20px 20px 100px 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     border: 2px solid #6A0DAD; /* Граница основного фиолетового цвета */
@@ -209,8 +209,6 @@ h1 {
 
     #game-container, #end-screen {
         width: 100wv;
-        margin: 10px auto;
-        padding: 15px;
     }
 
     h1 {
@@ -235,6 +233,12 @@ h1 {
         font-size: 18px;
         padding: 12px 20px;
         min-height: 45px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%; /* Make button span full width */
+        text-align: center;
+        border-radius: 0; /* Remove border radius to fit bottom edge */
     }
 
     #score-lives-container {
