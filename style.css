@@ -218,15 +218,15 @@ h1 {
     }
 
     #dialogue h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     #dialogue p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     #options button {
-        font-size: 16px;
+        font-size: 20px;
         padding: 12px;
         min-height: 45px;
     }
@@ -254,5 +254,9 @@ h1 {
     .icon, .heart-icon {
         width: 24px;
         height: 24px;
+    }
+    
+    #explanation p{
+        font-size: 20px;
     }
 }
