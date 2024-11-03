@@ -1,0 +1,202 @@
+/* style.css */
+
+/* Подключение шрифтов */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #1A1A40; /* Тёмно-синий фон */
+    color: #E0E0E0; /* Светлый серый текст */
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили контейнера */
+#game-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #2C2C54; /* Тёмно-фиолетовый фон для контейнера */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    border: 2px solid #6A0DAD; /* Граница основного фиолетового цвета */
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    color: #FFD700; /* Золотой цвет для заголовка */
+    font-size: 36px;
+}
+
+#score-lives-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#score, #lives {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#score img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+#lives img {
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+}
+
+.heart-icon {
+    filter: drop-shadow(0 0 5px #ad2634);
+}
+
+.icon {
+    filter: drop-shadow(0 0 5px #1a88db);
+}
+
+/* Стили сценария */
+#scenario-container {
+    margin-top: 20px;
+}
+
+#dialogue h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #B19CD9; /* Светло-фиолетовый цвет */
+}
+
+#dialogue p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #6A0DAD;
+    border-radius: 5px;
+    background-color: #6A0DAD; /* Основной фиолетовый */
+    color: #E0E0E0;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: left;
+}
+
+#options button:hover {
+    background-color: #7D3C98; /* Более светлый фиолетовый при наведении */
+    transform: scale(1.02);
+}
+
+#options button:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+#explanation {
+    margin-top: 20px;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #FFD700; /* Золотой акцент */
+}
+
+#next-button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #6A0DAD;
+    border-radius: 5px;
+    background-color: #6A0DAD;
+    color: #E0E0E0;
+    font-family: 'Cinzel Decorative', cursive;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#next-button:hover {
+    background-color: #7D3C98;
+    transform: scale(1.02);
+}
+
+/* Цветовые подсказки для ответов */
+.correct-answer {
+    background-color: #1f7517 !important; /* Зеленый */
+    border-color: #1f7517 !important;
+}
+
+.partial-answer {
+    background-color: #8a8619 !important; /* Желтый */
+    border-color: #8a8619 !important;
+}
+
+.wrong-answer {
+    background-color: #911d19 !important; /* Красный */
+    border-color: #911d19 !important;
+}
+
+/* Стили для экрана окончания игры */
+#end-screen {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #2C2C54;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #6A0DAD;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+#end-screen h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #FFD700;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+#end-screen p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#end-screen button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #6A0DAD;
+    border-radius: 5px;
+    background-color: #6A0DAD;
+    color: #E0E0E0;
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#end-screen button:hover {
+    background-color: #7D3C98;
+    transform: scale(1.02);
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#game-container, #end-screen {
+    animation: fadeIn 1s ease-in;
+}

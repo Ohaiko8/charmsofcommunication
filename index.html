@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Charms of Communication</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Подключение шрифтов Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Quicksand&display=swap" rel="stylesheet">
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Чары коммуникации</h1>
+        <div id="score-lives-container">
+            <div id="score">
+                <img src="crystal.png" alt="Счёт" class="icon">
+                <span id="score-value">0</span>
+            </div>
+            <div id="lives">
+                <!-- Иконки жизней будут добавляться динамически -->
+            </div>
+        </div>
+        <div id="scenario-container">
+            <div id="dialogue">
+                <!-- Диалог будет отображаться здесь -->
+            </div>
+            <div id="options">
+                <!-- Варианты ответов будут отображаться здесь -->
+            </div>
+            <div id="explanation">
+                <!-- Объяснение будет отображаться здесь после выбора -->
+            </div>
+        </div>
+        <button id="next-button" style="display: none;">Следующий сценарий</button>
+    </div>
+
+    <div id="end-screen" style="display: none;">
+        <!-- Здесь будет отображаться экран окончания игры -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
